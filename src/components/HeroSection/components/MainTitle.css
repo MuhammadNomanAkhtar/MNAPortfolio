@@ -1,0 +1,51 @@
+@import "tailwindcss/tailwind.css";
+
+.titleGradient {
+  background: radial-gradient(
+      73.1% 66.83% at 16.18% 47.64%,
+      #1a3ebe 10%,
+      rgba(36, 33, 75, 0) 100%
+    ),
+    linear-gradient(
+      271deg,
+      rgba(83.94, 224.21, 255, 0.4) 20%,
+      /* rgba(255, 255, 255, 0.22) 86%, */
+      rgba(255, 255, 255, 0.403) 46%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  box-shadow: 200px 200px 200px black;
+  /* filter: blur(80px); */
+}
+/* .gradientRadial {
+  background: radial-gradient(
+    circle,
+    theme(colors.primary_blue) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  /* background-image: url('../../../assets/Gradient\ Ellipse\ 3.svg'); */
+  /* filter: blur(72px); */
+  /* -webkit-filter: blur(72px); */
+  /* opacity: 0.8; */
+/* } */
+
+/* .gradientRadial2 {
+  background: radial-gradient(
+    circle,
+    theme(colors.primary_cyan) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); */
+  /* background-image: url('../../../assets/Gradient\ Ellipse\ 3.svg'); */
+  /* filter: blur(72px); */
+  /* -webkit-filter: blur(72px); */
+  /* opacity: 0.8; */
+/* } */
+
+/* .mainTitleAnimation {
+  opacity: 0.1;
+  position: absolute;
+  top: 50rem;
+  right: 150px;
+  inset: 10rem;
+} */
+
+

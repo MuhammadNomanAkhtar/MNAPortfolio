@@ -1,0 +1,220 @@
+.neumorphic-container {
+  border: none;
+  border-radius: 0.5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.outlined-container {
+  border-bottom-width: 1px;
+  border-color: rgba(255, 255, 255, 0.13);
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 1px;
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+    rgba(130, 130, 138, 0.2) 0%,
+    rgba(130, 130, 138, 0.1) 100%
+  );
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 20px -1px,
+    rgba(47, 24, 108, 0.1) 0px 4px 20px 0px;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  opacity: 1;
+}
+
+/* Default styles for all screen sizes */
+/* .contact-container {
+  border-bottom-width: 0.5px;
+  border-color: theme('colors.primary_blue');
+  background: linear-gradient(
+      theme('colors.background'),
+      theme('colors.background')
+    )
+    padding-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(15, 15, 215, 0.15) 0px 0px 40px 4px,
+    rgba(0, 162, 182, 0.15) 0px 0px 40px 4px;
+} */
+
+/* Styles for small screens (up to 'sm' breakpoint) */
+/* @media (max-width: 640px) {
+  .contact-container {
+    box-shadow: rgba(15, 15, 215, 0.15) 0px 0px 40px 4px,
+      rgba(0, 162, 182, 0.15) 0px 0px 40px 4px;
+    background: linear-gradient(
+        theme('colors.background'),
+        theme('colors.background')
+      )
+      padding-box; */
+/* Add any other specific small screen styles here */
+/* } */
+
+/* .contact-container {
+    box-shadow: rgba(15, 15, 215, 0.2) 0px 0px 40px 8px,
+      rgba(0, 162, 182, 0.2) 0px 0px 40px 8px;
+    background: linear-gradient(
+          theme('colors.background'),
+          theme('colors.background')
+        )
+        padding-box,
+      linear-gradient(
+          to right,
+          theme('colors.primary_blue'),
+          theme('colors.primary_cyan')
+        )
+        border-box; */
+/* Add any other specific hover styles for large screens here */
+/* }
+} */
+
+/* Styles for large screens (from 'lg' breakpoint and above) */
+/* @media (min-width: 1024px) {
+  .contact-container {
+    box-shadow: rgba(15, 15, 215, 0.15) 0px 0px 40px 4px,
+      rgba(0, 162, 182, 0.15) 0px 0px 40px 4px;
+    background: linear-gradient(
+        theme('colors.background'),
+        theme('colors.background')
+      )
+      padding-box; */
+/* Add any other specific large screen styles here */
+/* } */
+
+/* Hover styles for large screens */
+/* .contact-container:hover {
+    box-shadow: rgba(15, 15, 215, 0.2) 0px 0px 40px 8px,
+      rgba(0, 162, 182, 0.2) 0px 0px 40px 8px;
+    background: linear-gradient(
+          theme('colors.background'),
+          theme('colors.background')
+        )
+        padding-box,
+      linear-gradient(
+          to right,
+          theme('colors.primary_blue'),
+          theme('colors.primary_cyan')
+        )
+        border-box; */
+/* Add any other specific hover styles for large screens here */
+/* }
+} */
+
+.contact-container {
+  border-bottom-width: 0.5px;
+  border-color: theme(colors.primary_blue);
+  background: linear-gradient(
+      theme(colors.background),
+      theme(colors.background)
+    )
+    padding-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(15, 15, 215, 0.15) 0px 0px 40px 4px,
+    rgba(0, 162, 182, 0.15) 0px 0px 40px 4px;
+}
+
+.btn-container {
+  background-color: theme(colors.fgray.500);
+}
+
+/* Styles for small screens (up to 'sm' breakpoint) */
+@media (max-width: 768px) {
+/* @media only screen { */
+  .contact-container {
+    box-shadow: rgba(15, 15, 215, 0.2) 0px 0px 40px 8px,
+      rgba(0, 162, 182, 0.2) 0px 0px 40px 8px;
+    border-bottom-width: 0.5px;
+    border-color: theme(colors.primary_blue);
+    background: linear-gradient(
+          theme(colors.background),
+          theme(colors.background)
+        )
+        padding-box,
+      linear-gradient(
+          to right,
+          theme(colors.primary_blue),
+          theme(colors.primary_cyan)
+        )
+        border-box;
+    border: 1px solid transparent;
+  }
+  .contact-container .btn-container {
+    background: linear-gradient(
+        to right,
+        theme(colors.primary_blue),
+        theme(colors.primary_cyan)
+      )
+      border-box;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+/* Styles for large screens (from 'lg' breakpoint and above) */
+@media (min-width: 768px) {
+
+  
+
+  .contact-container {
+    border-bottom-width: 0.5px;
+    border-color: theme(colors.primary_blue);
+    background: linear-gradient(
+        theme(colors.background),
+        theme(colors.background)
+      )
+      padding-box;
+    border-radius: 50em;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(15, 15, 215, 0.15) 0px 0px 40px 4px,
+      rgba(0, 162, 182, 0.15) 0px 0px 40px 4px;
+  }
+  
+  .contact-container:hover {
+    box-shadow: rgba(15, 15, 215, 0.2) 0px 0px 40px 8px,
+      rgba(0, 162, 182, 0.2) 0px 0px 40px 8px;
+    border-bottom-width: 0.5px;
+    border-color: theme(colors.primary_blue);
+    background: linear-gradient(
+          theme(colors.background),
+          theme(colors.background)
+        )
+        padding-box,
+      linear-gradient(
+          to right,
+          theme(colors.primary_blue),
+          theme(colors.primary_cyan)
+        )
+        border-box;
+    border: 1px solid transparent;
+  }
+
+  .contact-container .btn-container {
+    background-color: theme(colors.fgray.500);
+  }
+  .contact-container:hover .btn-container {
+    background: linear-gradient(
+        to right,
+        theme(colors.primary_blue),
+        theme(colors.primary_cyan)
+      )
+      border-box;
+    transition: 0.2s ease-in-out;
+  }
+}

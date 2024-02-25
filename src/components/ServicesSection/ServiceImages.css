@@ -1,0 +1,16 @@
+
+.images-section{
+    /* transform: translate(10%, 10%) rotate(-10deg); */
+    transform: translate(-10px, -10px) rotate(-10deg);
+}
+
+.bullet-points h4::before{
+content: "";
+    position: absolute;
+    left: 0;
+    top: 1.05rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 1px solid #fff;
+    border-radius: 99em;
+}

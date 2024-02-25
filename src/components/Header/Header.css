@@ -1,0 +1,26 @@
+/* Add transitions for smooth animation */
+/* .mobile-menu{
+    transition: all 2s ease-in-out;
+} */
+
+/* Add this CSS to your existing stylesheet or create a new one */
+.mobile-menu {
+  transform: translateY(-120%); /* Start the menu off the screen */
+  transition: transform 0.3s ease; /* Add the transition for smooth animation */
+}
+
+.mobile-menu.show {
+  transform: translateY(0); /* Slide the menu down to show it */
+}
+
+.mobile-menu-open {
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 1;
+  transform: translateY(0); /* Slide the menu from top to bottom */
+}
+
+.mobile-menu-closed {
+  opacity: 0; /* Hide the menu when closed */
+  transform: translateY(-100%); /* Slide the menu back to the top */
+  transition: opacity 0.3s, transform 0.3s;
+}
