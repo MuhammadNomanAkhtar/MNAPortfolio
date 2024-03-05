@@ -51,15 +51,13 @@ function ServicesSection({ test }) {
   ];
   return (
     <div className="mt-20" id="services">
-
       {/* <TitleWithGradient /> */}
       <SectionTitle
         mainTitle={"Services"}
         title={"What I can do for you"}
         subtitle={"I can help you with the following"}
       />
-      <div className="mt-4 mx-4">
-        {/* <ServiceCard /> */}
+      {/* <div className="mt-4 mx-4">
         <ServiceGenericCard
           startColor={kColors.fpurple[400]}
           endColor={kColors.fpurple[700]}
@@ -67,7 +65,7 @@ function ServicesSection({ test }) {
           data={mobileServices}
           secondChild={<ServiceImages />}
         />
-      </div>
+      </div> */}
 
       <div className="mt-4 mx-4">
         {/* <ServiceCard /> */}

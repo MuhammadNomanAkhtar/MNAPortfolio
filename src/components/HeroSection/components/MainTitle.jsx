@@ -20,7 +20,7 @@ const scaleVariants = {
   },
 };
 
-function MainTitle({variants, delay}) {
+function MainTitle({ variants, delay }) {
   return (
     <>
       <div className="relative w-full">
@@ -41,21 +41,23 @@ function MainTitle({variants, delay}) {
           </div>
         </div>
         <motion.div
-        style={{
-          // translateY: '100%',
-        }}
+          style={
+            {
+              // translateY: '100%',
+            }
+          }
           variants={variants}
           className="mt-8 mix-blend-overlay text-white text-5xl sm:text-6xl lg:text-8xl text-center font-black shadow-inner sm:drop-shadow-lg"
         >
-          FULLSTACK
+          MERN STACK
           {/* <WordTransition/> */}
-          <div>MOBILE & WEB</div>
+          <div> DEVELOPER</div>
           {/* <div className="infinite-slide-container">
             <div className="slide-element">MOBILE</div>
             <div className="slide-element">WEB</div>
           </div> */}
           {/* <AnimatedTexts texts={['MOBILE','WEB']} /> */}
-          DEVELOPER
+          {/* DEVELOPER */}
         </motion.div>
       </div>
       <div className="absolute -bottom-10 left-0 w-full -z-[10] hidden lg:block">

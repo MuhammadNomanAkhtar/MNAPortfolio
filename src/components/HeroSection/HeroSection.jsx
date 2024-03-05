@@ -1,6 +1,7 @@
 import React from "react";
 import { ProfileAvatar } from "./components/ProfieAvatar";
 import MainTitle from "./components/MainTitle";
+// import umarpp from "../../assets/umarpp.JPG";
 import {
   profile_picture_3x,
   ahsanprofile,
@@ -56,7 +57,7 @@ export default function HeroSection() {
         style={{}}
         initial="hidden"
         animate="show"
-        className="flex flex-col items-center"
+        className="flex flex-col items-center my-3"
       >
         <motion.h1
           variants={item}
@@ -77,8 +78,7 @@ export default function HeroSection() {
           variants={item}
           className="text-white text-center mt-20 mx-10 text-base"
         >
-          Transforming ideas into reality with a seamless Mobile and Web
-          experience.
+          Transforming ideas into reality with a seamless Web experience.
         </motion.h1>
       </motion.div>
     </>
