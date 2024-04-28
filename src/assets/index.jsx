@@ -8,6 +8,7 @@ import ahsan_profile2 from "./ahsanprofile2.svg";
 import ahsan_profile3 from "./ahsanprofile3.svg";
 import ahsan_profile3x from "./ahsanProfile3x.png";
 import ahsan_profile4 from "./profile.jpg";
+import Profile from "./Profile.jpeg";
 import ahsan_profile5 from "./ahsanprofile5.svg";
 
 // import ahsan_icon from './m1.png';
@@ -22,7 +23,11 @@ import android from "./icons/android.svg";
 import apple from "./icons/ic_baseline-apple.svg";
 import flutter from "./icons/material-symbols_flutter.svg";
 import reactnativeicon from "./icons/React-icon.svg (1).png";
+import sonarSvg from "./icons/sonar.svg"
 
+import appStore_icon from "./icons/appStore.png";
+import playStore_icon from "./icons/playStore.png";
+import sonarQube from "./icons/sonarQube.png";
 import delivery_frame from "./frames/delivery.jpg";
 import kugali_frame from "./frames/kugali_2.jpg";
 import lengo_frame from "./frames/lengo_2.jpg";
@@ -151,4 +156,9 @@ export {
   ahsan_profile3x,
   ahsan_profile4,
   ahsan_profile5,
+  Profile,
+  appStore_icon,
+  playStore_icon,
+  sonarQube,
+  sonarSvg
 };

@@ -4,8 +4,12 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import ServiceCard, {
   BackendDevelopmentServiceContent,
   BackendServiceServiceContent,
+  DeploymentServiceContent,
+  DeploymentServiceServiceContent,
   MobileDevelopmentServiceContent,
   MobileServiceServiceContent,
+  SonarIntegrationServiceContent,
+  SonarServiceServiceContent,
   WebDevelopmentServiceContent,
   WebServiceServiceContent,
 } from "./ServiceCard";
@@ -38,6 +42,16 @@ function ServicesSection({ test }) {
       content: <WebServiceServiceContent />,
     },
   ];
+  const sonarServices = [
+    {
+      type: "Integration",
+      content: <SonarIntegrationServiceContent />,
+    },
+    {
+      type: "Services",
+      content: <SonarServiceServiceContent />,
+    },
+  ];
 
   const backendServices = [
     {
@@ -49,6 +63,17 @@ function ServicesSection({ test }) {
       content: <BackendServiceServiceContent />,
     },
   ];
+
+  const deploymentServices = [
+    {
+      type: "Deployment",
+      content: <DeploymentServiceContent />,
+    },
+    {
+      type: "Services",
+      content: <DeploymentServiceServiceContent />,
+    },
+  ];
   return (
     <div className="mt-20" id="services">
       {/* <TitleWithGradient /> */}
@@ -57,7 +82,7 @@ function ServicesSection({ test }) {
         title={"What I can do for you"}
         subtitle={"I can help you with the following"}
       />
-      {/* <div className="mt-4 mx-4">
+      <div className="mt-4 mx-4">
         <ServiceGenericCard
           startColor={kColors.fpurple[400]}
           endColor={kColors.fpurple[700]}
@@ -65,10 +90,9 @@ function ServicesSection({ test }) {
           data={mobileServices}
           secondChild={<ServiceImages />}
         />
-      </div> */}
+      </div>
 
-      <div className="mt-4 mx-4">
-        {/* <ServiceCard /> */}
+      {/* <div className="mt-4 mx-4">
         <ServiceGenericCard
           startColor={kColors.sky[400]}
           endColor={kColors.sky[700]}
@@ -78,7 +102,7 @@ function ServicesSection({ test }) {
           data={webServices}
           secondChild={<ServiceWebImages />}
         />
-      </div>
+      </div> */}
 
       <div className="mt-4 mx-4">
         {/* <ServiceCard /> */}
@@ -89,11 +113,33 @@ function ServicesSection({ test }) {
           endColor={kColors.pink[800]}
           // startColor={kColors.red[400]}
           // endColor={kColors.red[800]}
+          title={`App/Release Deployment`}
+          data={deploymentServices}
+          secondChild={<ServiceBackendImages />}
+        />
+      </div>
+      
+      <div className="mt-4 mx-4">
+        <ServiceGenericCard
+          startColor={kColors.sky[400]}
+          endColor={kColors.sky[700]}
+          // startColor={kColors.fblue[400]}
+          // endColor={kColors.fblue[800]}
+          title={`Sonar Qube`}
+          data={sonarServices}
+          secondChild={<ServiceWebImages />}
+        />
+      </div>
+
+      {/* <div className="mt-4 mx-4">
+        <ServiceGenericCard
+          startColor={kColors.pink[600]}
+          endColor={kColors.pink[800]}
           title={`Backend`}
           data={backendServices}
           secondChild={<ServiceBackendImages />}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -49,7 +49,7 @@ function MainTitle({ variants, delay }) {
           variants={variants}
           className="mt-8 mix-blend-overlay text-white text-5xl sm:text-6xl lg:text-8xl text-center font-black shadow-inner sm:drop-shadow-lg"
         >
-          MERN STACK
+          REACT NATIVE
           {/* <WordTransition/> */}
           <div> DEVELOPER</div>
           {/* <div className="infinite-slide-container">

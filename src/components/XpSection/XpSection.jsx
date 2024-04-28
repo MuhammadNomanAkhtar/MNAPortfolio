@@ -19,7 +19,7 @@ export default function XpSection() {
 	return (
 		<div id='experiences' className=''>
 			<SectionTitle
-				mainTitle={'3+ Years XP'}
+				mainTitle={'3 Years Experience'}
 				title={"What I've been up to"}
 				subtitle={
 					"I've had the oppurtunity to work across different industries and with different technologies."

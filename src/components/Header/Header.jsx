@@ -52,7 +52,7 @@ export const Header = () => {
           {/* Hide this div on screens smaller than md breakpoint */}
           <NavLink text="Works" href="/#works" />
           <NavLink text="Experiences" href="/#experiences" />
-          <NavLink text="Testimonials" href="/#testimonials" />
+          {/* <NavLink text="Testimonials" href="/#testimonials" /> */}
           <NavLink text="Services" href="/#services" />
           <NavButtonLink href="#contact" text="Contact me" />
           <ResumeButton

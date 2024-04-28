@@ -86,7 +86,7 @@ function ContactSection(props) {
 										size={28}
 									/>
 								</a>
-								<a
+								{/* <a
 									href={socialLinks.telegram}
 									target='_blank'
 									rel='noopener noreferrer'>
@@ -94,7 +94,7 @@ function ContactSection(props) {
 										className='fill-gray-400 hover:fill-white transition duration-300'
 										size={28}
 									/>
-								</a>
+								</a> */}
 							</div>
 							<a
 								href={`mailto:${socialLinks.email}`}

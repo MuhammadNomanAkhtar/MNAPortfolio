@@ -45,11 +45,16 @@ export default function ProjectCardFull({project, onClick}) {
                 <h1 className={'font-bold text-lg'}>Project Links.</h1>
 
                 <div className={'mt-2 flex flex-row space-x-3'}>
+                    {playstore_link == null && appstore_link == null && github_link == null && website_link == null ?
+                    <LinkWithText link={' '} icon={null} title={'This App is Private'}/>
+                    :
+                    <>
                     <LinkWithText link={playstore_link} icon={<BiLogoPlayStore/>} title={'Playstore link'}/>
-                    {/*<LinkWithText link={playstore_link_2} icon={<BiLogoPlayStore/>} title={'Live playstore app 2 link'}/>*/}
                     <LinkWithText link={appstore_link} icon={<BiLogoApple/>} title={'Appstore link'}/>
                     <LinkWithText link={github_link} icon={<BsGithub/>} title={'Source code'}/>
                     <LinkWithText link={website_link} icon={<BsGlobe/>} title={'Website'}/>
+                    </>
+                    }
                 </div>
             </div>
         </div>

@@ -12,6 +12,7 @@ import {
   // ahsan_profile3,
   ahsan_profile4,
   ahsan_profile5,
+  Profile,
 } from "../../assets";
 import { motion } from "framer-motion";
 
@@ -63,12 +64,12 @@ export default function HeroSection() {
           variants={item}
           className="text-white text-center text-xl md:text-2xl xl:text-3xl"
         >
-          Hi👋, I'm Umar Rehman
+          Hi👋, I'm Muhammad Noman Akhtar
         </motion.h1>
         <motion.img
           variants={item}
-          src={ahsan_profile4}
-          className="h-42 sm:h-40 md:h-52 rounded-full"
+          src={Profile}
+          className="h-42 sm:h-40 md:h-52 w-42 sm:w-40 md:w-52 rounded-full"
           alt="Profile Picture"
         />
         {/* <motion.div variants={item}> */}
@@ -78,7 +79,7 @@ export default function HeroSection() {
           variants={item}
           className="text-white text-center mt-20 mx-10 text-base"
         >
-          Transforming ideas into reality with a seamless Web experience.
+          React Native mastery for seamless mobile brilliance.
         </motion.h1>
       </motion.div>
     </>

@@ -5,7 +5,7 @@ export const Logo = () => {
     <>
       <a href="/">
         {" "}
-        {/* <img className={'w-full'} src={logo} alt='logo' />{' '} */}
+        <img className={"w-full"} src={logo} alt="logo" />{" "}
       </a>
     </>
   );

@@ -10,6 +10,9 @@ import {
   mobileicon,
   nodejs,
   react,
+  appStore_icon,
+  playStore_icon,
+  sonarQube,
 } from "../../assets";
 import ServiceImages from "./ServiceImages";
 import { Tabs } from "flowbite-react";
@@ -33,6 +36,20 @@ export function BackendDevelopmentServiceContent() {
   );
 }
 
+export function DeploymentServiceContent() {
+  return (
+    <div className="mt-4 flex flex-row gap-3 flex-wrap grow items-center justify-between">
+      <div>
+        <ServiceType icon={appStore_icon} title="App Store" subtitle="Deployment" />
+        </div>
+        {/* <ServiceType icon={nodejs} title="Test Flight" subtitle="Deployment" /> */}
+        <ServiceType icon={playStore_icon} title="Play Store" subtitle="Deployment" />
+        <div></div>
+        {/* <ServiceType icon={express} title="Microsoft App Center" subtitle="Deployment" /> */}
+    </div>
+  );
+}
+
 export function WebDevelopmentServiceContent() {
   return (
     // <div className="mt-4 grid grid-cols-2 w-max content-between justify-items-stretch">
@@ -48,13 +65,29 @@ export function WebDevelopmentServiceContent() {
   );
 }
 
+export function SonarIntegrationServiceContent() {
+  return (
+    // <div className="mt-4 grid grid-cols-2 w-max content-between justify-items-stretch">
+    <div className="mt-4 flex flex-row gap-3 flex-wrap grow items-center justify-between">
+      <div className="flex-1 grow">
+        <ServiceType icon={sonarQube} title="Sonar Qube" subtitle="Integration" />
+      </div>
+      {/* <div className='flex-1 grow'>
+				<ServiceType icon={angular} title='AngularJs' subtitle='Development' />
+			</div> */}
+      {/* <div className="hidden sm:block"></div> */}
+    </div>
+  );
+}
+
 export function MobileDevelopmentServiceContent() {
   return (
     <div className="mt-4 flex flex-row gap-3 flex-wrap grow items-center justify-between">
       <ServiceType icon={android} title="Android App" subtitle="Development" />
       <ServiceType icon={apple} title="iOS App" subtitle="Development" />
       <ServiceType
-        icon={reactnativeicon}
+        // icon={reactnativeicon}
+        icon={react}
         title="React Native App"
         subtitle="Development"
       />
@@ -84,6 +117,24 @@ export function WebServiceServiceContent() {
   );
 }
 
+export function SonarServiceServiceContent() {
+  return (
+    <div className="mt-4 flex flex-row grow items-center justify-between">
+      <ul className="list-disc ml-4">
+        {[
+          "Comprehensive Code Quality Assurance",
+          "Automated Code Inspection",
+          "Continuous Integration and Delivery",
+        ].map((item) => (
+          <li className="p-[2px]" key={item}>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export function BackendServiceServiceContent() {
   return (
     <div className="mt-4 flex flex-row grow items-center justify-between">
@@ -95,6 +146,25 @@ export function BackendServiceServiceContent() {
           "Database Design and Implementation",
           "User Authentication and Authorization",
           "Secure Payment Gateway Integration",
+        ].map((item) => (
+          <li className="p-[2px]" key={item}>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export function DeploymentServiceServiceContent() {
+  return (
+    <div className="mt-4 flex flex-row grow items-center justify-between">
+      <ul className="list-disc ml-4">
+        {[
+          "App Store Deployment",
+          "Play Store Deployment",
+          "Test Flight Release Deployment",
+          "Microsoft App Center Release Deployment",
         ].map((item) => (
           <li className="p-[2px]" key={item}>
             {item}

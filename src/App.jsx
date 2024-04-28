@@ -24,7 +24,7 @@ function App() {
 				<InfoSection />
 				<ProjectSection />
 				<XpSection />
-				<TestimonialSection />
+				{/* <TestimonialSection /> */}
 
 				<ServicesSection />
 				<ContactSection />
