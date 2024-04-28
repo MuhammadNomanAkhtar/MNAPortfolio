@@ -59,7 +59,7 @@ export const Header = () => {
             className={
               "text-white transition-all duration-300 ease-in-out text-sm bg-fgray-700 hover:text-white hover:bg-gradient-to-r hover:from-primary_blue hover:to-primary_cyan px-3 py-3 rounded-md"
             }
-          />
+          /> 
         </div>
         <div className="md:hidden flex items-center">
           {" "}
