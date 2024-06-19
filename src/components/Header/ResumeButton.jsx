@@ -7,7 +7,7 @@ const ResumeButton = ({ className }) => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "Umar's resume.pdf"; // Change the filename if needed
+    link.download = "Noman's resume.pdf"; // Change the filename if needed
     link.click();
   };
 
