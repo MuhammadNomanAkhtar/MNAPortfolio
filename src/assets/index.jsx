@@ -8,7 +8,7 @@ import ahsan_profile2 from "./ahsanprofile2.svg";
 import ahsan_profile3 from "./ahsanprofile3.svg";
 import ahsan_profile3x from "./ahsanProfile3x.png";
 // import ahsan_profile4 from "./profile.jpg";
-import Profile from "./Profile.jpg"; 
+import Profile from "./Profile.jpg";
 import ahsan_profile5 from "./ahsanprofile5.svg";
 
 // import ahsan_icon from './m1.png';
