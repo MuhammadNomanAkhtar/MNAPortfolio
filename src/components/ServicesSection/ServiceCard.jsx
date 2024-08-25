@@ -181,7 +181,7 @@ export function MobileServiceServiceContent() {
       <ul className="list-disc ml-4">
         {[
           "Native Mobile App Development (iOS and Android)",
-          "Native mobile app development",
+          // "Native mobile app development",
           "Figma/XD/Sketch UI to Code",
           "Third-Party Services and Payment Gateway Integration",
           "Push Notifications and In-App Messaging",

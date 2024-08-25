@@ -17,7 +17,7 @@ import { Button, Timeline } from 'flowbite-react';
 
 export default function XpSection() {
 	return (
-		<div id='experiences' className=''>
+		<div id='experience' className=''>
 			<SectionTitle
 				mainTitle={'3 Years Experience'}
 				title={"What I've been up to"}

@@ -62,14 +62,16 @@ export default function HeroSection() {
       >
         <motion.h1
           variants={item}
-          className="text-white text-center text-xl md:text-2xl xl:text-3xl"
+          className="text-white text-center text-xl md:text-2xl xl:text-3xl margin-bottom:50px"
         >
           Hi👋, I'm Muhammad Noman Akhtar
         </motion.h1>
         <motion.img
           variants={item}
           src={Profile}
-          className="h-42 sm:h-40 md:h-52 w-42 sm:w-40 md:w-52 rounded-full"
+          // className="h-42 sm:h-40 md:h-52 w-42 sm:w-40 md:w-52 rounded-full"
+          // className="h-42 w-42 sm:h-40 sm:w-40 md:h-52 md:w-52 rounded-full"
+          className="h-40 w-40 sm:h-40 sm:w-40 md:h-52 md:w-52 rounded-full"
           alt="Profile Picture"
         />
         {/* <motion.div variants={item}> */}
@@ -77,7 +79,7 @@ export default function HeroSection() {
         {/* </motion.div> */}
         <motion.h1
           variants={item}
-          className="text-white text-center mt-20 mx-10 text-base"
+          className="text-white text-center mt-10 mx-10 text-base"
         >
           React Native mastery for seamless mobile brilliance.
         </motion.h1>

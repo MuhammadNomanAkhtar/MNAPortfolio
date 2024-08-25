@@ -64,7 +64,7 @@ function ProjectSection() {
                 duration: 0.5,
             }}
             className="max-w-7xl mx-auto"
-            id="works"
+            id="projects"
         >
 
             {/*<BlurModal showModal={showModal} setShowModal={setShowModal}>*/}

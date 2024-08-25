@@ -10,6 +10,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { NavLinkWrapper } from "./NavLinkWrapper.jsx";
 import { socialLinks } from "../../constants/index.js";
 import ResumeButton from "./ResumeButton.jsx";
+import CoverLetterButton from "./CoverLetterButton.jsx";
 
 export const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -50,12 +51,17 @@ export const Header = () => {
         <div className="hidden md:flex space-x-3">
           {" "}
           {/* Hide this div on screens smaller than md breakpoint */}
-          <NavLink text="Works" href="/#works" />
-          <NavLink text="Experiences" href="/#experiences" />
+          <NavLink text="Projects" href="/#projects" />
+          <NavLink text="Experience" href="/#experience" />
           {/* <NavLink text="Testimonials" href="/#testimonials" /> */}
           <NavLink text="Services" href="/#services" />
           <NavButtonLink href="#contact" text="Contact me" />
           <ResumeButton
+            className={
+              "text-white transition-all duration-300 ease-in-out text-sm bg-fgray-700 hover:text-white hover:bg-gradient-to-r hover:from-primary_blue hover:to-primary_cyan px-3 py-3 rounded-md"
+            }
+          /> 
+          <CoverLetterButton
             className={
               "text-white transition-all duration-300 ease-in-out text-sm bg-fgray-700 hover:text-white hover:bg-gradient-to-r hover:from-primary_blue hover:to-primary_cyan px-3 py-3 rounded-md"
             }
@@ -136,17 +142,17 @@ export const Header = () => {
             ref={menuRef}
             className={`bg-background -z-10 absolute w-full h-screen md:hidden px-4 md:px-0 flex flex-col space-y-2 show`}
           >
-            <NavLink text="Works" href="/#works" onClick={closeMenu} />
+            <NavLink text="Projects" href="/#projects" onClick={closeMenu} />
             <NavLink
-              text="Experiences"
-              href="/#experiences"
+              text="Experience"
+              href="/#experience"
               onClick={closeMenu}
             />
-            <NavLink
+            {/* <NavLink
               text="Testimonials"
               href="/#testimonials"
               onClick={closeMenu}
-            />
+            /> */}
             <NavLink text="Services" href="/#services" onClick={closeMenu} />
             <NavButtonLink
               onClick={closeMenu}
@@ -154,6 +160,11 @@ export const Header = () => {
               text="Contact me"
             />
             <ResumeButton
+              className={
+                " text-white transition-all  duration-300  ease-in-out text-sm  bg-fgray-700  hover:text-white hover:bg-gradient-to-r hover:from-primary_blue hover:to-primary_cyan px-3 py-3 rounded-md"
+              }
+            />
+            <CoverLetterButton
               className={
                 " text-white transition-all  duration-300  ease-in-out text-sm  bg-fgray-700  hover:text-white hover:bg-gradient-to-r hover:from-primary_blue hover:to-primary_cyan px-3 py-3 rounded-md"
               }
