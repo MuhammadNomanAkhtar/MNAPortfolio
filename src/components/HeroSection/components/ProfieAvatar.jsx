@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 // import profileImage3x from "../../../assets/ProfilePicture3x.png";
-import { Profile, ahsan_profile4 } from '../../../assets';
+import { Profile } from '../../../assets';
 // import profileImage4x from '../assets/ProfilePicture3x.png'
 export const ProfileAvatar = ({ size, src, className }) => {
 	size = size || 12;

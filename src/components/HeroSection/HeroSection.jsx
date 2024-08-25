@@ -10,7 +10,7 @@ import {
   ahsan_profile2,
   ahsan_profile3x,
   // ahsan_profile3,
-  ahsan_profile4,
+  // ahsan_profile4,
   ahsan_profile5,
   Profile,
 } from "../../assets";
