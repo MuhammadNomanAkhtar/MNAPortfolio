@@ -9,6 +9,7 @@ import { experiences } from '../../constants';
 import PropTypes from 'prop-types';
 
 import { Button, Timeline } from 'flowbite-react';
+import moment from 'moment/moment';
 
 // import resolveConfig from 'tailwindcss/resolveConfig'
 // import tailwindConfig from '../../../tailwind.config.js'
@@ -16,10 +17,16 @@ import { Button, Timeline } from 'flowbite-react';
 // const fullConfig = resolveConfig(tailwindConfig)
 
 export default function XpSection() {
+	const startDate = moment('2021-07-01');
+	const currentDate = moment();
+  
+	const years = currentDate.diff(startDate, 'years');
+	const months = currentDate.diff(startDate, 'months') % 12; // Get remaining months after calculating years
+//   console.log(years+"first"+months)
 	return (
 		<div id='experience' className=''>
 			<SectionTitle
-				mainTitle={'3 Years Experience'}
+				mainTitle={`${years}${months>=6? ".5+" : "+"} Year's Experience`}
 				title={"What I've been up to"}
 				subtitle={
 					"I've had the oppurtunity to work across different industries and with different technologies."
